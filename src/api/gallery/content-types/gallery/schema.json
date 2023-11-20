@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "galleries",
+  "info": {
+    "singularName": "gallery",
+    "pluralName": "galleries",
+    "displayName": "Gallery"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Media Gallery"
+    },
+    "description": {
+      "type": "richtext",
+      "default": "\"In our Gallery, you can see the before and after of my patients who have opted for a healthy homeopathic treatment. It's important to emphasise that not everyone progresses the same over time; what's crucial is knowing that we can improve with a medicine that is not harsh on our body.\""
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

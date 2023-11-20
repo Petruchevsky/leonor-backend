@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "homeopathies",
+  "info": {
+    "singularName": "homeopathy",
+    "pluralName": "homeopathies",
+    "displayName": "Homeopathy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "whatIsHomeopathy": {
+      "type": "string",
+      "default": "What is Homeopathy?"
+    },
+    "whatIsHomeopathyText": {
+      "type": "richtext",
+      "default": " Homeopathy is a system of complementary medicine in which individuals are given a remedy derived from natural substances, there are no raw material substances in our remedies, they are diluted to the point of not being detectable.   ​  Homeopathy seeks to match the energy of the disturbance in the body to help relieve the symptoms, whereas the conventional medicinal approach is to suppress the fever back into the body, homeopathy works by stimulating the body’s natural tendency to heal itself, it acts as a catalyst.  ​  Homeopathy adopts a “like treats like” approach to natural well-being.  ​  As a homeopath I am not so concerned with disease labels, but rather how your body expresses the symptoms of an illness. Remedies are matched to you, on an individual basis, taking into account your physical, mental and emotional situation.  ​  Homeopathy is an energy medicine where there is no “one pill fits all” ethos. "
+    },
+    "whenUseHomeopathy": {
+      "type": "string",
+      "default": " When and how can I use Homeopathy?"
+    },
+    "whenUseHomeopathyText": {
+      "type": "richtext",
+      "default": " Homeopathy can be used for acute and chronic conditions and is safe alongside conventional medicine.      There are also many different ways to practice and use homeopathy.     Acute prescribing can help for first aid use, whereas chronic conditions can benefit from an in-depth case taking and analysis to find a remedy that suits your individual needs at that time – this is called constitutional prescribing."
+    }
+  }
+}

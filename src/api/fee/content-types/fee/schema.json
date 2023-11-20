@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "fees",
+  "info": {
+    "singularName": "fee",
+    "pluralName": "fees",
+    "displayName": "Fees"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fees": {
+      "type": "string",
+      "default": "Fees"
+    },
+    "feesText": {
+      "type": "richtext",
+      "default": "These fees includes all homeopathic remedies and postage within UK.  If you are outside the UK, I will provide details to a homeopathic pharmacy where you can purchase remedies online.  ​  If you are unable to make your appointment, please give at least 48 hours notice otherwise a fee will be incurred.  ​  Payment for consultations is required at the time of booking your appointment. "
+    },
+    "newClients": {
+      "type": "richtext",
+      "default": " Initial consultation - New clients only (up to 75 mins)"
+    },
+    "newClientsPrice": {
+      "type": "integer",
+      "default": 105
+    },
+    "existingClients": {
+      "type": "richtext",
+      "default": " Follow-up - existing clients only  (45 mins)"
+    },
+    "existingClientsPrice": {
+      "type": "integer",
+      "default": 70
+    }
+  }
+}
