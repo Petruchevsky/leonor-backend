@@ -31,6 +31,17 @@
     "url": {
       "type": "uid",
       "targetField": "title"
+    },
+    "titulo": {
+      "type": "string",
+      "default": "Entrada de Blog"
+    },
+    "contenido": {
+      "type": "richtext"
+    },
+    "urlES": {
+      "type": "uid",
+      "targetField": "titulo"
     }
   }
 }
