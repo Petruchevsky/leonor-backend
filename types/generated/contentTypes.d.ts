@@ -909,6 +909,8 @@ export interface ApiHomeopathyHomeopathy extends Schema.SingleType {
     queEsLaHomeopatiaTexto: Attribute.RichText;
     cuandoPuedoUsarHomeopatia: Attribute.String &
       Attribute.DefaultTo<'Cuando puedo usar Homeopat\u00EDa?'>;
+    cuandoPuedoUsarHomeopatiaTexto: Attribute.RichText &
+      Attribute.DefaultTo<'La homeopat\u00EDa se puede utilizar para condiciones agudas y cr\u00F3nicas y es segura junto con la medicina convencional. Tambi\u00E9n existen muchas formas diferentes de practicar y usar la homeopat\u00EDa.  La prescripci\u00F3n aguda puede ayudar en el uso de primeros auxilios, mientras que las condiciones cr\u00F3nicas pueden beneficiarse de una toma de caso en profundidad y un an\u00E1lisis para encontrar un remedio que se adapte a tus necesidades individuales en ese momento; esto se llama prescripci\u00F3n constitucional.'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

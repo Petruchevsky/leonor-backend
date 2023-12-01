@@ -46,6 +46,10 @@
     "cuandoPuedoUsarHomeopatia": {
       "type": "string",
       "default": "Cuando puedo usar Homeopatía?"
+    },
+    "cuandoPuedoUsarHomeopatiaTexto": {
+      "type": "richtext",
+      "default": "La homeopatía se puede utilizar para condiciones agudas y crónicas y es segura junto con la medicina convencional. También existen muchas formas diferentes de practicar y usar la homeopatía.  La prescripción aguda puede ayudar en el uso de primeros auxilios, mientras que las condiciones crónicas pueden beneficiarse de una toma de caso en profundidad y un análisis para encontrar un remedio que se adapte a tus necesidades individuales en ese momento; esto se llama prescripción constitucional."
     }
   }
 }
