@@ -4,7 +4,8 @@
   "info": {
     "singularName": "tcs",
     "pluralName": "tcss",
-    "displayName": "Terms & Conditions"
+    "displayName": "Terms & Conditions",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,6 +19,13 @@
     "tcsText": {
       "type": "richtext",
       "default": "All appointments booked online require payment at the time of booking, to confirm the appointment.     You can cancel an appointment and get a full refund up to 48 hours prior to your appointment. Failure to attend your appointment will incur the full fee. Please double check your confirmation email as this will tell you the appointment time in your local time.  ​  If you have an emergency and cannot attend, please do contact me and I will reschedule for you and no fee will be charged. If I have to cancel or reschedule your appointment you will not be charged.  If urgent, you can contact me between appointments via email if necessary. I will endeavour to respond to you within my working hours - 9am - 5pm on Monday, Tuesdays and Thursdays only.   Thank you,  Leonor B."
+    },
+    "tcsES": {
+      "type": "string",
+      "default": "Términos y Condiciones"
+    },
+    "tcsESTexto": {
+      "type": "richtext"
     }
   }
 }

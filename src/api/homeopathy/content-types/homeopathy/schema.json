@@ -4,7 +4,8 @@
   "info": {
     "singularName": "homeopathy",
     "pluralName": "homeopathies",
-    "displayName": "Homeopathy"
+    "displayName": "Homeopathy",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,11 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "whatIsHomeopathy": {
       "type": "string",
@@ -33,6 +35,17 @@
     "whenUseHomeopathyText": {
       "type": "richtext",
       "default": " Homeopathy can be used for acute and chronic conditions and is safe alongside conventional medicine.      There are also many different ways to practice and use homeopathy.     Acute prescribing can help for first aid use, whereas chronic conditions can benefit from an in-depth case taking and analysis to find a remedy that suits your individual needs at that time – this is called constitutional prescribing."
+    },
+    "queEsLaHomeopatia": {
+      "type": "string",
+      "default": "Qué es la Homeopatía?"
+    },
+    "queEsLaHomeopatiaTexto": {
+      "type": "richtext"
+    },
+    "cuandoPuedoUsarHomeopatia": {
+      "type": "string",
+      "default": "Cuando puedo usar Homeopatía?"
     }
   }
 }

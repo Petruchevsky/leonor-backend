@@ -4,7 +4,8 @@
   "info": {
     "singularName": "privacy-police",
     "pluralName": "privacy-polices",
-    "displayName": "Privacy Police"
+    "displayName": "Privacy Police",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,6 +19,13 @@
     "privacyPoliceText": {
       "type": "richtext",
       "default": "Your confidentiality and privacy are important to me.    Below is a complete account of how I use and store your personal information.  At the point of your initial contact with me I collect basic information:  Name Address Contact Email address Phone number Reason for you contacting me  At the first appointment I collect medical history, date of birth and information about your condition/illness that you have consulted me for. After each subsequent appointment I then add additional notes about remedies and further ailments that we have discussed, and any suggestions I have made to you.  All the information I hold on you is collected directly from you, or via the method you have used to contact me (Setmore online booking system, email or via social media message services)  Upon first contact with me, prior to your appointment, I will email or post you a consent form to sign, this gives your consent and allows me to hold your personal data for the sole purpose of your treatment.  I use your data to help me prescribe remedies and to refer to when you book an appointment.   I do not share any of your data with anyone.  I will correspond with you by telephone, email, online and by post.  By law I am obliged to store your client notes for 7 years after your last consultation, and for children 7 years after their 18th birthday. Once this time has elapsed then I will destroy the files and delete any data I hold about you.  All of my notes are paper files only and these can be accessed by you, upon request at any time. I will make them available to you within 10 days of your request.  All my files are held within a locked filing cabinet that only I have access to. Contact information for you is held in my email provider Google Mail."
+    },
+    "polizaDePrivacidad": {
+      "type": "string",
+      "default": "Póliza de Privacidad"
+    },
+    "polizaDePrivacidadTexto": {
+      "type": "richtext"
     }
   }
 }

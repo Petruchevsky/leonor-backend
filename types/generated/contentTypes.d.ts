@@ -722,6 +722,8 @@ export interface ApiConsultationConsultation extends Schema.SingleType {
     consultation: Attribute.String & Attribute.DefaultTo<'consultation'>;
     consultationText: Attribute.RichText &
       Attribute.DefaultTo<'Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl\u00B4sica de la literatura del Latin, que data del a\u00F1o 45 antes de Cristo, haciendo que este adquiera mas de 2000 a\u00F1os de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontr\u00F3 una de las palabras m\u00E1s oscuras de la lengua del lat\u00EDn, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del lat\u00EDn, descubri\u00F3 la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el a\u00F1o 45 antes de Cristo. Este libro es un tratado de teor\u00EDa de \u00E9ticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la secci\u00F3n 1.10.32  El trozo de texto est\u00E1ndar de Lorem Ipsum usado desde el a\u00F1o 1500 es reproducido debajo para aquellos interesados. Las seccio'>;
+    consultas: Attribute.String & Attribute.DefaultTo<'Dudas y Consultas'>;
+    consultasTexto: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -754,6 +756,8 @@ export interface ApiFaqFaq extends Schema.CollectionType {
   attributes: {
     question: Attribute.String;
     answer: Attribute.RichText;
+    pregunta: Attribute.String;
+    respuesta: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -770,6 +774,7 @@ export interface ApiFeeFee extends Schema.SingleType {
     singularName: 'fee';
     pluralName: 'fees';
     displayName: 'Fees';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -784,6 +789,12 @@ export interface ApiFeeFee extends Schema.SingleType {
     existingClients: Attribute.RichText &
       Attribute.DefaultTo<' Follow-up - existing clients only  (45 mins)'>;
     existingClientsPrice: Attribute.Integer & Attribute.DefaultTo<70>;
+    cobros: Attribute.String;
+    cobrosTexto: Attribute.RichText;
+    clientesNuevos: Attribute.RichText;
+    clientesNuevosPrecio: Attribute.Integer & Attribute.DefaultTo<105>;
+    clientesExistentes: Attribute.RichText;
+    clientesExistentesPrecio: Attribute.Integer & Attribute.DefaultTo<70>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -800,6 +811,7 @@ export interface ApiGalleryGallery extends Schema.SingleType {
     singularName: 'gallery';
     pluralName: 'galleries';
     displayName: 'Gallery';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -809,6 +821,9 @@ export interface ApiGalleryGallery extends Schema.SingleType {
     description: Attribute.RichText &
       Attribute.DefaultTo<'"In our Gallery, you can see the before and after of my patients who have opted for a healthy homeopathic treatment. It\'s important to emphasise that not everyone progresses the same over time; what\'s crucial is knowing that we can improve with a medicine that is not harsh on our body."'>;
     image: Attribute.Media;
+    titulo: Attribute.String &
+      Attribute.DefaultTo<'Galer\u00EDa de Im\u00E1genes'>;
+    descripcion: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -847,13 +862,17 @@ export interface ApiHomeHome extends Schema.SingleType {
       Attribute.DefaultTo<'Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl\u00B4sica de la literatura del Latin, que data del a\u00F1o 45 antes de Cristo, haciendo que este adquiera mas de 2000 a\u00F1os de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontr\u00F3 una de las palabras m\u00E1s oscuras de la lengua del lat\u00EDn, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del lat\u00EDn, descubri\u00F3 la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el a\u00F1o 45 antes de Cristo. Este libro es un tratado de teor\u00EDa de \u00E9ticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la secci\u00F3n 1.10.32  El trozo de texto est\u00E1ndar de Lorem Ipsum usado desde el a\u00F1o 1500 es reproducido debajo para aquellos interesados. Las seccio'>;
     selfie: Attribute.Media;
     hhch: Attribute.String & Attribute.DefaultTo<'How Homeopathy Can Help'>;
-    tsw: Attribute.String & Attribute.DefaultTo<'TSW and Steroid Withdrawal'>;
-    tswText: Attribute.RichText &
-      Attribute.DefaultTo<'Es un hecho establecido hace demasiado tiempo que un lector se distraer\u00E1 con el contenido del texto de un sitio mientras que mira su dise\u00F1o. El punto de usar Lorem Ipsum es que tiene una distribuci\u00F3n m\u00E1s o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aqu\u00ED, contenido aqu\u00ED". Estos textos hacen parecerlo un espa\u00F1ol que se puede leer.'>;
     hhchText: Attribute.RichText &
       Attribute.DefaultTo<'Es un hecho establecido hace demasiado tiempo que un lector se distraer\u00E1 con el contenido del texto de un sitio mientras que mira su dise\u00F1o. El punto de usar Lorem Ipsum es que tiene una distribuci\u00F3n m\u00E1s o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aqu\u00ED, contenido aqu\u00ED". Estos textos hacen parecerlo un espa\u00F1ol que se puede leer.'>;
     logo: Attribute.Media;
     homePageImage: Attribute.Media;
+    bienvenido: Attribute.String & Attribute.DefaultTo<'Bienvenido'>;
+    bienvenidoTexto: Attribute.RichText;
+    sobreMi: Attribute.String & Attribute.DefaultTo<'Sobre Mi'>;
+    sobreMiTexto: Attribute.RichText;
+    clhpa: Attribute.String &
+      Attribute.DefaultTo<'Como la Homeopat\u00EDa puede ayudar?'>;
+    clhpaTexto: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -870,6 +889,7 @@ export interface ApiHomeopathyHomeopathy extends Schema.SingleType {
     singularName: 'homeopathy';
     pluralName: 'homeopathies';
     displayName: 'Homeopathy';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -884,6 +904,11 @@ export interface ApiHomeopathyHomeopathy extends Schema.SingleType {
       Attribute.DefaultTo<' When and how can I use Homeopathy?'>;
     whenUseHomeopathyText: Attribute.RichText &
       Attribute.DefaultTo<' Homeopathy can be used for acute and chronic conditions and is safe alongside conventional medicine.      There are also many different ways to practice and use homeopathy.     Acute prescribing can help for first aid use, whereas chronic conditions can benefit from an in-depth case taking and analysis to find a remedy that suits your individual needs at that time \u2013 this is called constitutional prescribing.'>;
+    queEsLaHomeopatia: Attribute.String &
+      Attribute.DefaultTo<'Qu\u00E9 es la Homeopat\u00EDa?'>;
+    queEsLaHomeopatiaTexto: Attribute.RichText;
+    cuandoPuedoUsarHomeopatia: Attribute.String &
+      Attribute.DefaultTo<'Cuando puedo usar Homeopat\u00EDa?'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -908,6 +933,7 @@ export interface ApiPrivacyPolicePrivacyPolice extends Schema.SingleType {
     singularName: 'privacy-police';
     pluralName: 'privacy-polices';
     displayName: 'Privacy Police';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -916,6 +942,9 @@ export interface ApiPrivacyPolicePrivacyPolice extends Schema.SingleType {
     privacyPolice: Attribute.String & Attribute.DefaultTo<'Privacy Police'>;
     privacyPoliceText: Attribute.RichText &
       Attribute.DefaultTo<'Your confidentiality and privacy are important to me.    Below is a complete account of how I use and store your personal information.  At the point of your initial contact with me I collect basic information:  Name Address Contact Email address Phone number Reason for you contacting me  At the first appointment I collect medical history, date of birth and information about your condition/illness that you have consulted me for. After each subsequent appointment I then add additional notes about remedies and further ailments that we have discussed, and any suggestions I have made to you.  All the information I hold on you is collected directly from you, or via the method you have used to contact me (Setmore online booking system, email or via social media message services)  Upon first contact with me, prior to your appointment, I will email or post you a consent form to sign, this gives your consent and allows me to hold your personal data for the sole purpose of your treatment.  I use your data to help me prescribe remedies and to refer to when you book an appointment.   I do not share any of your data with anyone.  I will correspond with you by telephone, email, online and by post.  By law I am obliged to store your client notes for 7 years after your last consultation, and for children 7 years after their 18th birthday. Once this time has elapsed then I will destroy the files and delete any data I hold about you.  All of my notes are paper files only and these can be accessed by you, upon request at any time. I will make them available to you within 10 days of your request.  All my files are held within a locked filing cabinet that only I have access to. Contact information for you is held in my email provider Google Mail.'>;
+    polizaDePrivacidad: Attribute.String &
+      Attribute.DefaultTo<'P\u00F3liza de Privacidad'>;
+    polizaDePrivacidadTexto: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -940,6 +969,7 @@ export interface ApiTcsTcs extends Schema.SingleType {
     singularName: 'tcs';
     pluralName: 'tcss';
     displayName: 'Terms & Conditions';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -948,6 +978,9 @@ export interface ApiTcsTcs extends Schema.SingleType {
     tcs: Attribute.String & Attribute.DefaultTo<'Terms & Conditions'>;
     tcsText: Attribute.RichText &
       Attribute.DefaultTo<'All appointments booked online require payment at the time of booking, to confirm the appointment.     You can cancel an appointment and get a full refund up to 48 hours prior to your appointment. Failure to attend your appointment will incur the full fee. Please double check your confirmation email as this will tell you the appointment time in your local time.  \u200B  If you have an emergency and cannot attend, please do contact me and I will reschedule for you and no fee will be charged. If I have to cancel or reschedule your appointment you will not be charged.  If urgent, you can contact me between appointments via email if necessary. I will endeavour to respond to you within my working hours - 9am - 5pm on Monday, Tuesdays and Thursdays only.   Thank you,  Leonor B.'>;
+    tcsES: Attribute.String &
+      Attribute.DefaultTo<'T\u00E9rminos y Condiciones'>;
+    tcsESTexto: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -964,6 +997,7 @@ export interface ApiTestimonialTestimonial extends Schema.CollectionType {
     singularName: 'testimonial';
     pluralName: 'testimonials';
     displayName: 'Testimonial';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -971,6 +1005,8 @@ export interface ApiTestimonialTestimonial extends Schema.CollectionType {
   attributes: {
     name: Attribute.String & Attribute.Required;
     testimonial: Attribute.RichText & Attribute.Required;
+    nombre: Attribute.String;
+    testimonio: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

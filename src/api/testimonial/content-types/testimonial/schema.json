@@ -4,7 +4,8 @@
   "info": {
     "singularName": "testimonial",
     "pluralName": "testimonials",
-    "displayName": "Testimonial"
+    "displayName": "Testimonial",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,6 +19,12 @@
     "testimonial": {
       "type": "richtext",
       "required": true
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "testimonio": {
+      "type": "richtext"
     }
   }
 }

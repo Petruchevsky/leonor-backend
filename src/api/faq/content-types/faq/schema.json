@@ -17,6 +17,12 @@
     },
     "answer": {
       "type": "richtext"
+    },
+    "pregunta": {
+      "type": "string"
+    },
+    "respuesta": {
+      "type": "richtext"
     }
   }
 }

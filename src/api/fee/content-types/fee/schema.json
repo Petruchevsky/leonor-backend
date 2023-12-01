@@ -4,7 +4,8 @@
   "info": {
     "singularName": "fee",
     "pluralName": "fees",
-    "displayName": "Fees"
+    "displayName": "Fees",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -32,6 +33,26 @@
       "default": " Follow-up - existing clients only  (45 mins)"
     },
     "existingClientsPrice": {
+      "type": "integer",
+      "default": 70
+    },
+    "cobros": {
+      "type": "string"
+    },
+    "cobrosTexto": {
+      "type": "richtext"
+    },
+    "clientesNuevos": {
+      "type": "richtext"
+    },
+    "clientesNuevosPrecio": {
+      "type": "integer",
+      "default": 105
+    },
+    "clientesExistentes": {
+      "type": "richtext"
+    },
+    "clientesExistentesPrecio": {
       "type": "integer",
       "default": 70
     }

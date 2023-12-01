@@ -4,7 +4,8 @@
   "info": {
     "singularName": "gallery",
     "pluralName": "galleries",
-    "displayName": "Gallery"
+    "displayName": "Gallery",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,11 +21,19 @@
       "default": "\"In our Gallery, you can see the before and after of my patients who have opted for a healthy homeopathic treatment. It's important to emphasise that not everyone progresses the same over time; what's crucial is knowing that we can improve with a medicine that is not harsh on our body.\""
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "titulo": {
+      "type": "string",
+      "default": "Galería de Imágenes"
+    },
+    "descripcion": {
+      "type": "richtext"
     }
   }
 }

@@ -38,14 +38,6 @@
       "type": "string",
       "default": "How Homeopathy Can Help"
     },
-    "tsw": {
-      "type": "string",
-      "default": "TSW and Steroid Withdrawal"
-    },
-    "tswText": {
-      "type": "richtext",
-      "default": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo \"Contenido aquí, contenido aquí\". Estos textos hacen parecerlo un español que se puede leer."
-    },
     "hhchText": {
       "type": "richtext",
       "default": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo \"Contenido aquí, contenido aquí\". Estos textos hacen parecerlo un español que se puede leer."
@@ -65,6 +57,27 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "bienvenido": {
+      "type": "string",
+      "default": "Bienvenido"
+    },
+    "bienvenidoTexto": {
+      "type": "richtext"
+    },
+    "sobreMi": {
+      "type": "string",
+      "default": "Sobre Mi"
+    },
+    "sobreMiTexto": {
+      "type": "richtext"
+    },
+    "clhpa": {
+      "type": "string",
+      "default": "Como la Homeopatía puede ayudar?"
+    },
+    "clhpaTexto": {
+      "type": "richtext"
     }
   }
 }
