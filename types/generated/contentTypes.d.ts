@@ -1027,6 +1027,37 @@ export interface ApiTestimonialTestimonial extends Schema.CollectionType {
   };
 }
 
+export interface ApiTestimonioTestimonio extends Schema.CollectionType {
+  collectionName: 'testimonios';
+  info: {
+    singularName: 'testimonio';
+    pluralName: 'testimonios';
+    displayName: 'Testimonios';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    nombre: Attribute.String;
+    testimonio: Attribute.RichText;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::testimonio.testimonio',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::testimonio.testimonio',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -1053,6 +1084,7 @@ declare module '@strapi/types' {
       'api::privacy-police.privacy-police': ApiPrivacyPolicePrivacyPolice;
       'api::tcs.tcs': ApiTcsTcs;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
+      'api::testimonio.testimonio': ApiTestimonioTestimonio;
     }
   }
 }
